@@ -1,0 +1,17 @@
+.thumbnail img {
+  max-height: 150px;
+}
+.thumbnail .description {
+  color: gray;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.clearfix .btn:hover {
+  background-color: transparent;
+  border: 1px solid green;
+  color: green;
+}

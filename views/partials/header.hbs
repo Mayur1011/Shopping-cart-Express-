@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="margin-left:600px" href="/">Shopping Cart
+        Management System</a>
+    </div>
+
+    {{! Right Side }}
+    <ul class="nav navbar-nav" style="margin-right:0px">
+      <li class="nav-item">
+        <a class="nav-link" style="margin-right:5px" href="/shopping-cart/">
+          <i class="fas fa-shopping-cart"></i>
+          Shopping Cart
+          <span
+            class="badge"
+            style="color:white; background:black; border-radius:10px"
+          >{{session.cart.totalQty}}</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        ><i class="fas fa-user"></i>
+          User Management
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-right"
+          aria-labelledby="navbarDropdown"
+        >
+          {{#if login}}
+            {{! <li><a class="dropdown-item" href="#">Action</a></li> }}
+            <li><a class="dropdown-item" href="/user/profile">
+                <i class="fas fa-user-circle"></i>
+                User Account</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="/user/logout">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout</a></li>
+          {{else}}
+            <li>
+              <a class="dropdown-item" href="/user/signup">
+                Sign Up
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/user/signin">
+                Sign In
+              </a>
+            </li>
+          {{/if}}
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
