@@ -1,6 +1,8 @@
 # Shopping Cart
 
+```
 Made with NodeJS, ExpressJs and MongoDB
+```
 
 ### Some main pages from the project
 
