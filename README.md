@@ -1,7 +1,7 @@
 # Shopping Cart
 
 ```
-Made with NodeJS, ExpressJs and MongoDB
+Made with NodeJS, ExpressJs and MongoDB as a part of the ADBMS Mini project.
 ```
 
 ### Some main pages from the project
